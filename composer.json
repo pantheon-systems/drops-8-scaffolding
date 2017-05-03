@@ -1,5 +1,5 @@
 {
-    "name": "drupal/drupal",
+    "name": "pantheon-systems/drops-8-scaffolding",
     "description": "Drupal is an open source content management platform powering millions of websites and applications.",
     "type": "project",
     "license": "GPL-2.0+",
@@ -50,8 +50,7 @@
     "scripts": {
         "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
         "post-autoload-dump": [
-          "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-          "Drupal\\Core\\Composer\\Composer::configurePhpcs"
+          "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
         ],
         "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
         "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
