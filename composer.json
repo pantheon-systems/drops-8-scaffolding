@@ -1,14 +1,14 @@
 {
-    "name": "drupal/drupal",
+    "name": "pantheon-systems/drops-8-scaffolding",
     "description": "Drupal is an open source content management platform powering millions of websites and applications.",
     "type": "project",
     "license": "GPL-2.0+",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "~1.4"
+        "wikimedia/composer-merge-plugin": "^1.4"
     },
     "replace": {
-        "drupal/core": "~8.3"
+        "drupal/core": "^8.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
