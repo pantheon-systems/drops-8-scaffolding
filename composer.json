@@ -1,5 +1,5 @@
 {
-    "name": "drupal/drupal",
+    "name": "pantheon-systems/drops-8-scaffolding",
     "description": "Drupal is an open source content management platform powering millions of websites and applications.",
     "type": "project",
     "license": "GPL-2.0+",
