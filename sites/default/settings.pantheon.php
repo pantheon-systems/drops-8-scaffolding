@@ -71,10 +71,14 @@ $is_installer_url = (strpos($_SERVER['SCRIPT_NAME'], '/core/install.php') === 0)
  *
  */
 if ($is_installer_url) {
-  $settings['config_sync_directory'] =  'sites/default/files';
+  $config_directories = array(
+    CONFIG_SYNC_DIRECTORY => 'sites/default/files',
+  );
 }
 else {
-  $settings['config_sync_directory'] = 'sites/default/config';
+  $config_directories = array(
+    CONFIG_SYNC_DIRECTORY => 'sites/default/config',
+  );
 }
 
 
@@ -146,7 +150,7 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
  *
  */
 if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
-  $settings["file_temp_path"] = $_SERVER['HOME'] .'/tmp';
+  $config['system.file']['path']['temporary'] = $_SERVER['HOME'] .'/tmp';
 }
 
 /**
