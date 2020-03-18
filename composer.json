@@ -1,5 +1,5 @@
 {
-    "name": "drupal/legacy-project",
+    "name": "pantheon-systems/drops-8-scaffolding",
     "description": "Project template for Drupal 8 projects with composer following drupal/drupal layout",
     "type": "project",
     "license": "GPL-2.0-or-later",
@@ -22,6 +22,7 @@
         "drupal/core-vendor-hardening": "^8.8"
     },
     "require-dev": {
+        "drupal/core-dev": "^8.8"
     },
     "conflict": {
         "drupal/drupal": "*"
